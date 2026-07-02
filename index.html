@@ -1,169 +1,209 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Anusuriya | Portfolio</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Anusuriya | Portfolio</title>
 
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Segoe UI', sans-serif;
-      background: #0f172a;
-      color: white;
-    }
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
 
-    nav {
-      background: #020617;
-      padding: 15px;
-      display: flex;
-      justify-content: center;
-      gap: 30px;
-      position: sticky;
-      top: 0;
-    }
+<style>
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(270deg, #0f172a, #1e293b, #020617);
+    background-size: 600% 600%;
+    animation: bgMove 10s ease infinite;
+    color: white;
+}
 
-    nav a {
-      color: #38bdf8;
-      text-decoration: none;
-      font-weight: bold;
-    }
+@keyframes bgMove {
+    0% {background-position:0% 50%;}
+    50% {background-position:100% 50%;}
+    100% {background-position:0% 50%;}
+}
 
-    header {
-      text-align: center;
-      padding: 80px 20px;
-    }
+header {
+    text-align: center;
+    padding: 60px 20px;
+}
 
-    header h1 {
-      font-size: 40px;
-    }
+header h1 {
+    font-size: 2.8rem;
+}
 
-    header p {
-      font-size: 18px;
-      color: #94a3b8;
-    }
+header p {
+    opacity: 0.8;
+}
 
-    .btn {
-      background: #38bdf8;
-      padding: 10px 20px;
-      border: none;
-      border-radius: 5px;
-      color: black;
-      cursor: pointer;
-      margin-top: 15px;
-    }
+.container {
+    max-width: 1000px;
+    margin: auto;
+    padding: 20px;
+}
 
-    section {
-      padding: 50px 20px;
-      max-width: 900px;
-      margin: auto;
-    }
+.card {
+    background: rgba(255,255,255,0.05);
+    backdrop-filter: blur(10px);
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 15px;
+    transition: 0.3s;
+}
 
-    h2 {
-      color: #38bdf8;
-      margin-bottom: 15px;
-    }
+.card:hover {
+    transform: scale(1.03);
+}
 
-    .container {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 20px;
-    }
+h2 {
+    border-left: 4px solid cyan;
+    padding-left: 10px;
+}
 
-    .card {
-      background: #1e293b;
-      padding: 20px;
-      border-radius: 10px;
-      flex: 1 1 250px;
-      transition: 0.3s;
-    }
+.skills {
+    line-height: 1.8;
+}
 
-    .card:hover {
-      transform: scale(1.05);
-      background: #334155;
-    }
+.skill-tag {
+    display: inline-block;
+    background: cyan;
+    color: black;
+    padding: 6px 12px;
+    margin: 5px;
+    border-radius: 20px;
+    font-size: 0.85rem;
+}
 
-    footer {
-      text-align: center;
-      padding: 20px;
-      background: #020617;
-      margin-top: 40px;
-    }
-  </style>
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 15px;
+    background: cyan;
+    color: black;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.btn:hover {
+    background: #00bcd4;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+</style>
 </head>
 
 <body>
 
-<nav>
-  <a href="#about">About</a>
-  <a href="#experience">Experience</a>
-  <a href="#skills">Skills</a>
-  <a href="#contact">Contact</a>
-</nav>
-
 <header>
-  <h1>Anusuriya S 👋</h1>
-  <p>Automation Test Engineer | Banking Domain (BFIC)</p>
-  <button class="btn">Download Resume</button>
+<h1>Anusuriya S</h1>
+<p>Automation Test Engineer | BFSI Domain</p>
+
+<a class="btn" href="Anusuriya_Resume.pdf" download>Download Resume</a>
 </header>
 
-<section id="about">
-  <h2>About Me</h2>
-  <p>
-    I am an Automation Test Engineer with a strong foundation in Computer Science and Engineering (CGPA: 8.79)
-    and 1 year of hands-on industry experience. I have completed professional training in Java, SQL,
-    Manual Testing, and Automation Testing.
-  </p>
+<div class="container">
 
-  <p>
-    I am passionate about delivering high-quality software and continuously improving my skills in automation
-    and modern testing technologies. I am looking for opportunities to grow and contribute effectively
-    to innovative teams 🚀
-  </p>
-</section>
+<!-- ABOUT -->
+<div class="card">
+<h2>About Me</h2>
+<p>
+Automation Test Engineer with 1 year of hands-on experience in the BFSI (Banking) domain. 
+Specialized in building and maintaining scalable test automation frameworks using Java, Playwright, Selenium, and Cucumber (BDD).<br><br>
 
-<section id="experience">
-  <h2>Experience</h2>
-  <div class="card">
-    <h3>Automation Test Engineer</h3>
-    <p><strong>Company:</strong> Tristha Globals Private Limited, Chennai</p>
-    <p>
-      Working on automation testing for a banking application (Mashreq – BFIC domain).
-      Experienced in Java, Playwright, and Cucumber (BDD).
-    </p>
-    <p>
-      Worked across modules: Money Market (MM), Treasury Deposits (TD), Securities,
-      Payments, and Trade Finance.
-    </p>
-    <p>
-      Implemented automation for SIT & UAT across regions including US, UK, and Hong Kong.
-      Independently handled the Money Market (MM) module across all regions.
-    </p>
-  </div>
-</section>
+Experienced in end-to-end testing across SIT and UAT environments for global regions including the US, UK, and Hong Kong. 
+Strong understanding of business workflows in banking modules such as Money Market (MM), Treasury Deposits (TD), Securities, Payments, and Trade Finance.<br><br>
 
-<section id="skills">
-  <h2>Skills</h2>
-  <div class="container">
-    <div class="card">Java</div>
-    <div class="card">SQL</div>
-    <div class="card">Manual Testing</div>
-    <div class="card">Automation Testing</div>
-    <div class="card">Selenium</div>
-    <div class="card">Playwright</div>
-    <div class="card">Cucumber BDD</div>
-    <div class="card">TestNG</div>
-    <div class="card">STLC & SDLC</div>
-    <div class="card">Agile & Scrum</div>
-  </div>
-</section>
+Passionate about delivering high-quality software through efficient automation, continuous integration, and modern testing practices.
+</p>
+</div>
 
-<section id="contact">
-  <h2>Contact</h2>
-  <p>Email: your-email@example.com</p>
-  <p>Location: Chennai, India</p>
-</section>
+<!-- SKILLS -->
+<div class="card">
+<h2>Skills</h2>
+
+<div class="skills">
+<b>Languages:</b><br>
+<span class="skill-tag">Java</span>
+<span class="skill-tag">SQL</span><br>
+
+<b>Automation Tools:</b><br>
+<span class="skill-tag">Selenium</span>
+<span class="skill-tag">Playwright</span><br>
+
+<b>Frameworks:</b><br>
+<span class="skill-tag">Cucumber BDD</span>
+<span class="skill-tag">TestNG</span><br>
+
+<b>Testing:</b><br>
+<span class="skill-tag">Manual Testing</span>
+<span class="skill-tag">Automation Testing</span><br>
+
+<b>Concepts:</b><br>
+<span class="skill-tag">STLC</span>
+<span class="skill-tag">SDLC</span><br>
+
+<b>Domain:</b><br>
+<span class="skill-tag">BFSI (Banking)</span><br>
+
+<b>Methodologies:</b><br>
+<span class="skill-tag">Agile</span>
+<span class="skill-tag">Scrum</span><br>
+
+<b>Additional Knowledge:</b><br>
+<span class="skill-tag">API Testing (Postman)</span>
+<span class="skill-tag">CI/CD Basics</span>
+<span class="skill-tag">Git & GitHub</span>
+<span class="skill-tag">MCP (Learning)</span>
+<span class="skill-tag">RAG (Learning)</span>
+
+</div>
+</div>
+
+<!-- EXPERIENCE -->
+<div class="card">
+<h2>Experience</h2>
+<p>
+<b>Automation Test Engineer</b><br>
+Tristha Globals Private Limited, Chennai<br><br>
+
+- Worked on Mashreq Banking Application under BFSI domain<br>
+- Designed and executed automation scripts using Java, Playwright, and Cucumber BDD<br>
+- Automated SIT and UAT testing across US, UK, and Hong Kong regions<br>
+- Independently handled the Money Market (MM) module across all regions<br>
+- Collaborated with cross-functional teams in Agile environment<br>
+- Improved test coverage and reduced manual effort through automation
+</p>
+</div>
+
+<!-- PROJECT -->
+<div class="card">
+<h2>Project</h2>
+<p>
+<b>Banking Automation Framework</b><br><br>
+
+- Built automation framework using Java + Playwright + Cucumber BDD<br>
+- Covered multiple banking modules: MM, TD, Securities, Payments, Trade<br>
+- Enabled cross-region execution (US, UK, HK)<br>
+- Ensured stable execution for SIT and UAT environments
+</p>
+</div>
+
+<!-- CONTACT -->
+<div class="card">
+<h2>Contact</h2>
+<p>Email: yourmail@gmail.com</p>
+<p>LinkedIn: linkedin.com/in/yourprofile</p>
+</div>
+
+</div>
 
 <footer>
-  <p>© 2026 Anusuriya S | Automation Test Engineer</p>
+<p>© 2026 Anusuriya</p>
 </footer>
 
 </body>
