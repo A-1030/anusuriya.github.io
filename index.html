@@ -2,62 +2,169 @@
 <html>
 <head>
   <title>Anusuriya | Portfolio</title>
+
   <style>
     body {
-      font-family: Arial;
       margin: 0;
+      font-family: 'Segoe UI', sans-serif;
       background: #0f172a;
       color: white;
     }
+
+    nav {
+      background: #020617;
+      padding: 15px;
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      position: sticky;
+      top: 0;
+    }
+
+    nav a {
+      color: #38bdf8;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
     header {
       text-align: center;
-      padding: 40px;
-      background: #1e293b;
+      padding: 80px 20px;
     }
+
+    header h1 {
+      font-size: 40px;
+    }
+
+    header p {
+      font-size: 18px;
+      color: #94a3b8;
+    }
+
+    .btn {
+      background: #38bdf8;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      color: black;
+      cursor: pointer;
+      margin-top: 15px;
+    }
+
     section {
-      padding: 30px;
+      padding: 50px 20px;
+      max-width: 900px;
+      margin: auto;
     }
+
     h2 {
       color: #38bdf8;
+      margin-bottom: 15px;
     }
+
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
     .card {
       background: #1e293b;
-      padding: 15px;
-      margin: 10px 0;
+      padding: 20px;
       border-radius: 10px;
+      flex: 1 1 250px;
+      transition: 0.3s;
+    }
+
+    .card:hover {
+      transform: scale(1.05);
+      background: #334155;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #020617;
+      margin-top: 40px;
     }
   </style>
 </head>
+
 <body>
 
+<nav>
+  <a href="#about">About</a>
+  <a href="#experience">Experience</a>
+  <a href="#skills">Skills</a>
+  <a href="#contact">Contact</a>
+</nav>
+
 <header>
-  <h1>Anusuriya S</h1>
-  <p>Automation Test Engineer</p>
+  <h1>Anusuriya S 👋</h1>
+  <p>Automation Test Engineer | Banking Domain (BFIC)</p>
+  <button class="btn">Download Resume</button>
 </header>
 
-<section>
+<section id="about">
   <h2>About Me</h2>
-  <p>I am an Automation Test Engineer with a strong foundation in Computer Science and Engineering (CGPA: 8.79) and 1 year of hands-on industry experience. I have completed professional training in Java, SQL, Manual Testing, and Automation Testing.</p>
+  <p>
+    I am an Automation Test Engineer with a strong foundation in Computer Science and Engineering (CGPA: 8.79)
+    and 1 year of hands-on industry experience. I have completed professional training in Java, SQL,
+    Manual Testing, and Automation Testing.
+  </p>
+
+  <p>
+    I am passionate about delivering high-quality software and continuously improving my skills in automation
+    and modern testing technologies. I am looking for opportunities to grow and contribute effectively
+    to innovative teams 🚀
+  </p>
 </section>
-<section>
-  <h2>Skills</h2>
-  <div class="card">Java, SQL</div>
-  <div class="card">Selenium, Playwright, Cucumber BDD</div>
-  <div class="card">Manual Testing, STLC, SDLC</div>
-  <div class="card">Agile, Scrum</div>
-</section>
-<section>
+
+<section id="experience">
   <h2>Experience</h2>
   <div class="card">
-Currently, I am working at Tristha Globals Private Limited, Chennai, where I contribute to automation testing for a banking application (Mashreq – BFIC domain). I have experience working with modern frameworks using Java, Playwright, and Cucumber (BDD).<br>
-I have worked across multiple modules including Money Market (MM), Treasury Deposits (TD), Securities, Payments, and Trade Finance. I have implemented automation for both SIT and UAT across multiple regions such as the US, UK, and Hong Kong.<br>
-I independently handled the Money Market (MM) module across all three regions, ensuring stable and efficient automation execution. My work involves understanding business flows, designing test scenarios, and maintaining automation scripts.<br>
+    <h3>Automation Test Engineer</h3>
+    <p><strong>Company:</strong> Tristha Globals Private Limited, Chennai</p>
+    <p>
+      Working on automation testing for a banking application (Mashreq – BFIC domain).
+      Experienced in Java, Playwright, and Cucumber (BDD).
+    </p>
+    <p>
+      Worked across modules: Money Market (MM), Treasury Deposits (TD), Securities,
+      Payments, and Trade Finance.
+    </p>
+    <p>
+      Implemented automation for SIT & UAT across regions including US, UK, and Hong Kong.
+      Independently handled the Money Market (MM) module across all regions.
+    </p>
   </div>
 </section>
-<section>
-  <h2>Contact</h2>
-  <p>Email: anusuriya@gamil.com</p>
+
+<section id="skills">
+  <h2>Skills</h2>
+  <div class="container">
+    <div class="card">Java</div>
+    <div class="card">SQL</div>
+    <div class="card">Manual Testing</div>
+    <div class="card">Automation Testing</div>
+    <div class="card">Selenium</div>
+    <div class="card">Playwright</div>
+    <div class="card">Cucumber BDD</div>
+    <div class="card">TestNG</div>
+    <div class="card">STLC & SDLC</div>
+    <div class="card">Agile & Scrum</div>
+  </div>
 </section>
+
+<section id="contact">
+  <h2>Contact</h2>
+  <p>Email: your-email@example.com</p>
+  <p>Location: Chennai, India</p>
+</section>
+
+<footer>
+  <p>© 2026 Anusuriya S | Automation Test Engineer</p>
+</footer>
 
 </body>
 </html>
